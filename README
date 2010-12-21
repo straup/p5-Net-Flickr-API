@@ -17,6 +17,7 @@ OPTIONS
     or a valid Config::Simple config file. Options are grouped by "block".
 
   flick
+
     * api_key
         String. *required*
 
@@ -45,6 +46,7 @@ OPTIONS
             Use XML::XPath.
 
   reporting
+
     * enabled
         Boolean.
 
@@ -53,7 +55,7 @@ OPTIONS
     * handler
         String.
 
-        The default handler is Screen, as in "Log::Dispatch::Screen"
+        The default handler is Screen, as in `Log::Dispatch::Screen'
 
     * handler_args
         For example, the following :
@@ -70,6 +72,7 @@ OPTIONS
 
 PACKAGE METHODS
   __PACKAGE__->new($cfg)
+
     Where $cfg is either a valid *Config::Simple* object or the path to a
     file that can be parsed by *Config::Simple*.
 
@@ -77,6 +80,7 @@ PACKAGE METHODS
 
 OBJECT METHODS
   $obj->api_call(\%args)
+
     Valid args are :
 
     * method
@@ -95,23 +99,26 @@ OBJECT METHODS
     XML::LibXML is installed) or a *XML::XPath* object.
 
   $obj->get_auth()
+
     Return an XML *node* element containing the Flickr auth token
     information for the current object.
 
     Returns undef if no token information is present.
 
   $obj->get_auth_nsid()
+
     Return the Flickr NSID of the user associated with the Flickr auth token
     information for the current object.
 
     Returns undef if no token information is present.
 
   $obj->upload(\%args)
+
     This is a helper method that simply wraps calls to the *Flickr::Upload*
     upload method. All the arguments are the same. For complete
     documentation please consult:
 
-    <http://search.cpan.org/dist/Flickr-Upload/Upload.pm#upload>
+    http://search.cpan.org/dist/Flickr-Upload/Upload.pm#upload
 
     (Note: There's no need to pass an auth_token argument as the wrapper
     will take care of for you.)
@@ -120,10 +127,11 @@ OBJECT METHODS
     success or false if there was a problem.
 
   $obj->log()
+
     Returns a *Log::Dispatch* object.
 
 VERSION
-    1.69
+    1.7
 
 DATE
     $Date: 2009/08/02 17:16:12 $

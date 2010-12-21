@@ -15,4 +15,4 @@ Makefile.old$
 t/TEST$
 t/SMOKE$
 ^blibdirs\.ts
-~$
+~$^MYMETA.yml$

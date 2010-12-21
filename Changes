@@ -4,15 +4,28 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix doap:    <http://usefulinc.com/ns/doap#> .
 @prefix asc:     <http://aaronland.info/ns/changefile/> .
-                                     
+
 <>
         dc:identifier           "$Id: Changes,v 1.22 2009/08/02 17:16:12 asc Exp $" ;
         dc:description          "Changes for Net::Flickr::API.pm" ;
         dcterms:references      <http://aaronland.info/perl/net/flickr/api/> .
 
+<http://aaronland.info/perl/net/delicious/Net-Flickr-API-1.7.tar.gz>
+        dcterms:isVersionOf <http://aaronland.info/perl/flickr/api/> ;
+        dcterms:replaces    <http://aaronland.info/perl/net/flickr/api/Net-Flickr-API-1.69.tar.gz>;
+
+        doap:Version    [
+                        doap:revision     "1.7" ;
+                        doap:created      "2010-12-21" ;
+                        ];
+        asc:changes     [
+                        asc:update        "Removed fancy versioning for dependencies" ;
+                        asc:update        "Require Flickr::API 1.04";
+                        ] .
+
 <http://aaronland.info/perl/net/delicious/Net-Flickr-API-1.69.tar.gz>
         dcterms:isVersionOf <http://aaronland.info/perl/flickr/api/> ;
-        dcterms:replaces    <http://aaronland.info/perl/net/flickr/api/Net-Flickr-API-1.68.tar.gz>; 
+        dcterms:replaces    <http://aaronland.info/perl/net/flickr/api/Net-Flickr-API-1.68.tar.gz>;
 
         doap:Version    [
                         doap:revision     "1.69" ;
@@ -25,7 +38,7 @@
 
 <http://aaronland.info/perl/net/delicious/Net-Flickr-API-1.68.tar.gz>
         dcterms:isVersionOf <http://aaronland.info/perl/flickr/api/> ;
-        dcterms:replaces    <http://aaronland.info/perl/net/flickr/api/Net-Flickr-API-1.67.tar.gz>; 
+        dcterms:replaces    <http://aaronland.info/perl/net/flickr/api/Net-Flickr-API-1.67.tar.gz>;
 
         doap:Version    [
                         doap:revision     "1.68" ;
