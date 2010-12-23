@@ -16,11 +16,12 @@
 
         doap:Version    [
                         doap:revision     "1.7" ;
-                        doap:created      "2010-12-21" ;
+                        doap:created      "2010-12-22" ;
                         ];
         asc:changes     [
                         asc:update        "Removed fancy versioning for dependencies" ;
                         asc:update        "Require Flickr::API 1.04";
+                        asc:bugfix        "When setting up log dispatcher, check the return value not $!";
                         ] .
 
 <http://aaronland.info/perl/net/delicious/Net-Flickr-API-1.69.tar.gz>
